@@ -1,0 +1,453 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main #view1 {
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: Rgb(50, 93, 86);
+}
+main #view1 nav {
+  padding: 1.5rem;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+main #view1 nav #LeftNav h2 {
+  font-size: 2rem;
+}
+main #view1 nav #LeftNav h2 span {
+  opacity: 0.7;
+}
+main #view1 nav #RightNav .normal {
+  display: none;
+}
+main #view1 nav #RightNav .mobile {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+main #view1 #hero {
+  color: white;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view1 #hero #heroUp {
+  padding-left: 0.7rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+main #view1 #hero #heroUp #herotext {
+  opacity: 70%;
+}
+main #view1 #hero #heroUp #herobutton button {
+  padding: 1rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: black;
+  border: none;
+}
+main #view1 #hero #heroUp #herobutton #shop {
+  background-color: rgb(241, 193, 17);
+}
+main #view1 #hero #heroUp #herobutton #Explore {
+  padding: 0.8rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.755);
+  color: white;
+  font-weight: 900;
+}
+main #view1 #hero #herodown {
+  position: relative;
+}
+main #view1 #hero #herodown #dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+main #view1 #hero #herodown #couch {
+  position: relative;
+  z-index: 5;
+}
+main #view2 {
+  background-color: whitesmoke;
+  padding-top: 8rem;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view2 #firstCard {
+  padding: 0.5rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view2 #firstCard p {
+  opacity: 80%;
+  line-height: 1.6;
+}
+main #view2 #firstCard button {
+  padding: 1rem;
+  width: 100px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}
+main #view2 .product {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 90%;
+  text-align: center;
+  padding: 3vw;
+}
+main #view2 .product #CardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+main #view2 .product #CardContent img {
+  width: 80%;
+  transition: all ease-in 0.3s;
+}
+main #view2 .product #cardEffect {
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  bottom: 0;
+  opacity: 0;
+  background: rgba(126, 178, 206, 0.485);
+  transition: all ease-in 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+  overflow: visible !important;
+}
+main #view2 .product #cardEffect #icon {
+  padding-top: 50px;
+  color: rgb(37, 36, 36);
+  cursor: pointer;
+  transform: translateY(25%);
+  font-size: 2rem;
+}
+main #view2 .product:hover #cardEffect {
+  opacity: 100%;
+}
+main #view2 .product:hover #CardContent img {
+  transform: translateY(-20px) scale(1.05);
+}
+main #view3 {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #view3 #up {
+  margin-top: 8rem;
+  padding: 0.5rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view3 #up #upertext {
+  width: 80%;
+}
+main #view3 #up #upertext h2 {
+  opacity: 95%;
+}
+main #view3 #up #upertext p {
+  opacity: 70%;
+}
+main #view3 #up #cards {
+  display: flex;
+  flex-direction: column;
+}
+main #view3 #up #cards .rows {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.9rem;
+}
+main #view3 #up #cards .rows .card #cardIcon {
+  max-width: 200px;
+  font-size: 2rem;
+  position: relative;
+}
+main #view3 #up #cards .rows .card #cardIcon #ho {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(113, 184, 184, 0.651);
+  border-radius: 50%;
+  top: 30%;
+  left: 5%;
+  opacity: 70%;
+  display: inline-block;
+}
+main #view3 #down {
+  text-align: center;
+  position: relative;
+}
+main #view3 #down img {
+  width: 90%;
+  border-radius: 2rem;
+}
+main #view3 #down #hover {
+  position: absolute;
+  top: -15%;
+  left: -10%;
+  z-index: 0;
+  width: 80%;
+  border-radius: 0;
+}
+main #view3 #down #whiteSofa {
+  position: relative;
+  z-index: 1;
+}
+main #view4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+main #view4 #up {
+  position: relative;
+}
+main #view4 #up #dots {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+main #view4 #up #dots img {
+  width: 70%;
+}
+main #view4 #up #bentogrid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "uleft uright" "uleft bright";
+  padding: 2rem;
+}
+main #view4 #up #bentogrid .image img {
+  border-radius: 10px;
+}
+main #view4 #up #bentogrid .mainImg {
+  width: 100%;
+  grid-area: uleft;
+}
+main #view4 #up #bentogrid .mainImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #view4 #up #bentogrid .side-top {
+  width: 100%;
+  grid-area: uright;
+  padding: 0.5rem;
+}
+main #view4 #up #bentogrid .side-top img {
+  width: 100%;
+}
+main #view4 #up #bentogrid .side-bottom {
+  width: 100%;
+  grid-area: bright;
+  position: relative;
+}
+main #view4 #up #bentogrid .side-bottom img {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 130%;
+}
+main #view4 #down {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 2vw;
+  padding: 0 0.5rem;
+}
+main #view4 #down #topText {
+  line-height: 1.5;
+}
+main #view4 #down #topText h1 {
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+main #view4 #down #topText p {
+  padding: 3vw 0;
+  line-height: 1.6;
+  opacity: 70%;
+}
+main #view4 #down #points {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #view4 #down #points .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+main #view4 #down #button button {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}
+main #view5 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 1rem;
+}
+main #view5 .card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+main #view5 .card .pic {
+  width: 50%;
+  background-color: rgba(0, 255, 255, 0.174);
+  border-radius: 25px;
+}
+main #view5 .card .pic img {
+  width: 100%;
+}
+main #view5 .card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main #view5 .card .text a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.79);
+}
+
+/* big screen*/
+@media (min-width: 987px) {
+  main #view1 nav {
+    padding: 1vw 5vw;
+  }
+  main #view1 nav #RightNav {
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+  }
+  main #view1 nav #RightNav .mobile {
+    display: none;
+  }
+  main #view1 nav #RightNav .normal {
+    display: inline-block;
+  }
+  main #view1 nav #RightNav #icon {
+    display: flex;
+    gap: 1vw;
+    font-size: 1.2rem;
+  }
+  main #view1 #hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main #view1 #hero #heroUp {
+    min-width: 50%;
+  }
+  main #view1 #hero #heroUp #heroMainText {
+    width: 50%;
+  }
+  main #view1 #hero #heroUp #heroMainText h1 {
+    font-size: 3rem;
+  }
+  main #view1 #hero #heroUp #herotext {
+    width: 50%;
+    line-height: 1.5;
+  }
+  main #view1 #hero #herodown {
+    width: 50%;
+  }
+  main #view2 {
+    flex-direction: row;
+    padding: 3vw;
+    align-items: center;
+  }
+  main #view3 {
+    flex-direction: row;
+    padding: 10vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main #view3 #up {
+    width: 40%;
+    align-self: flex-start;
+    gap: 5vw;
+  }
+  main #view3 #up #upertext h2 {
+    font-size: 3rem;
+  }
+  main #view3 #down {
+    width: 40%;
+  }
+  main #view3 #down img {
+    width: 100%;
+  }
+  main #view3 #down #hover {
+    width: 60%;
+  }
+  main #view4 {
+    flex-direction: row;
+    align-items: center;
+    gap: 6vw;
+  }
+  main #view4 #up {
+    width: 40%;
+  }
+  main #view4 #down {
+    padding-right: 5rem;
+    width: 40%;
+  }
+  main #view4 #down #topText {
+    line-height: 1.5;
+  }
+  main #view4 #down #topText h1 {
+    font-size: 3rem !important;
+    opacity: 80%;
+  }
+  main #view4 #down #topText p {
+    padding: 3vw 0;
+    line-height: 1.6;
+    opacity: 70%;
+    font-size: 1rem !important;
+  }
+  main #view5 {
+    flex-direction: row;
+    justify-content: center;
+  }
+  main #view5 .card {
+    width: 25%;
+  }
+}/*# sourceMappingURL=style.css.map */
