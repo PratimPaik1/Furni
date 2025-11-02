@@ -158,7 +158,7 @@ main #view3 {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
 }
 main #view3 #up {
   margin-top: 8rem;
@@ -216,7 +216,7 @@ main #view3 #down #hover {
   top: -15%;
   left: -10%;
   z-index: 0;
-  width: 80%;
+  width: 75%;
   border-radius: 0;
 }
 main #view3 #down #whiteSofa {
@@ -224,9 +224,10 @@ main #view3 #down #whiteSofa {
   z-index: 1;
 }
 main #view4 {
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  padding-top: 10rem;
 }
 main #view4 #up {
   position: relative;
@@ -317,7 +318,8 @@ main #view4 #down #button button {
   border-radius: 30px;
 }
 main #view5 {
-  margin-top: 3rem;
+  background-color: whitesmoke;
+  padding-top: 7rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -344,6 +346,160 @@ main #view5 .card .text {
 main #view5 .card .text a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.79);
+}
+main #view6 {
+  background-color: whitesmoke;
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+main #view6 #uperHeading h4 {
+  font-size: 2rem;
+}
+main #view6 #moving {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+main #view6 #moving #imageDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+main #view6 #moving #imageDescription img {
+  border-radius: 50%;
+  width: 50%;
+}
+main #view6 #moving #imageDescription h5 {
+  font-size: 1rem;
+}
+main #view7 {
+  background-color: whitesmoke;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #view7 #top {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view7 #top h4 a {
+  color: black;
+}
+main #view7 #bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+main #view7 #bottom .bcard {
+  width: 90%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+main #view7 #bottom .bcard img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+main #view7 #bottom .bcard h5 {
+  padding-left: 0.8rem;
+}
+main #view7 #bottom .bcard h5 span {
+  opacity: 70%;
+}
+main #view7 #bottom .bcard:hover img {
+  opacity: 80%;
+}
+main #view8 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #view8 #topNews {
+  display: flex;
+  flex-direction: column;
+}
+main #view8 #topNews #pic img {
+  width: 99%;
+}
+main #view8 #topNews #news {
+  margin-top: -10%;
+  padding-left: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view8 #topNews #news h3 {
+  color: rgb(168, 166, 166);
+}
+main #view8 #topNews #news h3 span {
+  color: Rgb(50, 93, 86);
+}
+main #view8 #topNews #news #in {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view8 #topNews #news #in input {
+  width: 70%;
+  padding: 0.8rem;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.403);
+}
+main #view8 #topNews #news #in #botin i {
+  font-size: 1rem;
+  padding: 0.8rem;
+  background-color: Rgb(50, 93, 86);
+  border-radius: 10px;
+  color: white;
+}
+main #view8 #center {
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main #view8 #center #row1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view8 #center #row1 h5 {
+  color: Rgb(50, 93, 86);
+  font-size: 1.6rem;
+}
+main #view8 #center #row1 #icon i {
+  padding: 0.6rem;
+  background-color: Rgb(50, 93, 86);
+  border-radius: 50%;
+  color: white;
+}
+main #view8 #center #row2 {
+  display: flex;
+  gap: 5rem;
+  line-height: 2;
+}
+main #view8 #center #row2 #upper, main #view8 #center #row2 #down {
+  display: flex;
+  flex-direction: column;
+}
+main #view8 #center #row2 #upper h6, main #view8 #center #row2 #down h6 {
+  font-size: 1rem;
+  color: rgba(53, 51, 51, 0.864);
 }
 
 /* big screen*/
@@ -444,10 +600,80 @@ main #view5 .card .text a {
     font-size: 1rem !important;
   }
   main #view5 {
+    margin-top: 10rem;
     flex-direction: row;
     justify-content: center;
   }
   main #view5 .card {
     width: 25%;
+  }
+  main #view6 #moving {
+    width: 50%;
+  }
+  main #view7 {
+    padding: 0 2rem;
+  }
+  main #view7 #top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main #view7 #top h4 {
+    font-size: 1.8rem;
+  }
+  main #view7 #bottom {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+  }
+  main #view7 #bottom .bcard {
+    width: 30%;
+  }
+  main #view8 {
+    margin-top: 5rem;
+  }
+  main #view8 #topNews {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  main #view8 #topNews #pic {
+    position: relative;
+  }
+  main #view8 #topNews #pic img {
+    width: 80%;
+  }
+  main #view8 #topNews #news #in {
+    flex-direction: row;
+  }
+  main #view8 #center {
+    flex-direction: row;
+    padding: 3rem;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  main #view8 #center #row1 {
+    width: 30%;
+    line-height: 2;
+  }
+  main #view8 #center #row2 {
+    min-width: 60%;
+    max-width: 70%;
+    justify-content: space-around;
+  }
+  main #view8 #center #row2 #upper, main #view8 #center #row2 #down {
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main #view8 #center #row2 #upper h6, main #view8 #center #row2 #down h6 {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1900px) {
+  main {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
